@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 body {
     margin: 0;
@@ -196,6 +200,22 @@ header ul a {
     box-shadow: 0 0 15px #727fde86;
 }
 
+.download-btn button {
+  background-color: #727fde;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn button:hover {
+  background-color: #5d6ee2;
+}
+
+
 /* About Section */
 .about {
     width: 100%;
@@ -335,17 +355,16 @@ header ul a {
     }
 }
 
-/* Projects Section */
-
-.my-projects .section-title{
+.my-projects .section-title {
     font-size: 2.5rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem auto 40px auto;  
+    width: fit-content;            
     background: linear-gradient(to right, #727fde, #9b78f1);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin-bottom: 40px;
+    display: block;      
 }
 
 /* Project Card Styles */
@@ -354,6 +373,7 @@ header ul a {
     flex-direction: column;
     align-items: center;
     gap: 10%;
+    text-align: center;
     position: relative;
     width: 80%;
     height: 100vh;
@@ -473,8 +493,19 @@ header ul a {
     border-radius: 20px;
     margin-top: 40px;
     text-align: center;
-    color: white;
+    color: #727fde;
 }
+
+.skills .section-title {
+  background: linear-gradient(to right, #727fde, #9b78f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2.5rem; 
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 
 .skills-container {
     display: flex;
@@ -534,9 +565,13 @@ body {
     height: var(--height);
     overflow: hidden;
     position: relative;
-    margin-bottom: 40px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
+
+
 
 .slider .list {
     display: flex;
