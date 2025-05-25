@@ -466,62 +466,35 @@ header ul a {
 }
 
 /* Skills */
-.skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
+<section class="skills" id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
 
-.skills-box {
-    width: 100%;
-    height: 90vh;
-    position: relative;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
+    <div class="skill-category">
+      <h3>Programming & Database</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>MySQL</li>
+        <li>Power BI</li>
+      </ul>
+    </div>
 
-.skills-section h1.section-title {
-    color: #727fde;
-    font-size: 2.5rem;
-}
+    <div class="skill-category">
+      <h3>Tools & Technologies</h3>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>Android Studio</li>
+        <li>Figma</li>
+      </ul>
+    </div>
 
-.skills-image {
-    width: 70%;
-    mix-blend-mode: lighten;
-    opacity: 0.7;
-}
+  </div>
+</section>
 
-.designer {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    top: 25%;
-    left: 5%;
-    max-width: 300px;
-}
-
-.coder {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    top: 25%;
-    right: 5%;
-    max-width: 300px;
-}
-
-.skills-box h1 {
-    font-size: 45px;
-    display: flex;
-    align-items: center;
-}
-
-.skills-box p {
-    line-height: 25px;
-}
 
 /* Slider */
 body {
