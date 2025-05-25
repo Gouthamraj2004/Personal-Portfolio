@@ -389,6 +389,7 @@ header ul a {
     height: 40%;
     align-items: center;
     gap: 10%;
+    margin-bottom: 30px;
     justify-content: center;
 }
 
@@ -396,7 +397,7 @@ header ul a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     position: relative;
     padding: 0 20px;
     cursor: pointer;
