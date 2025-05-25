@@ -466,35 +466,51 @@ header ul a {
 }
 
 /* Skills */
-<section class="skills" id="skills">
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-container">
+.skills {
+    padding: 60px 20px;
+    background: rgba(0, 0, 69, 0.2);
+    box-shadow: 0 0 15px #727fde40;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
 
-    <div class="skill-category">
-      <h3>Programming & Database</h3>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>MySQL</li>
-        <li>Power BI</li>
-      </ul>
-    </div>
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
 
-    <div class="skill-category">
-      <h3>Tools & Technologies</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>VS Code</li>
-        <li>Android Studio</li>
-        <li>Figma</li>
-      </ul>
-    </div>
+.skill-category {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #727fde33;
+    backdrop-filter: blur(10px);
+    width: 300px;
+    text-align: left;
+}
 
-  </div>
-</section>
+.skill-category h3 {
+    font-size: 20px;
+    color: #9b78f1;
+    margin-bottom: 15px;
+}
 
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: lightgray;
+}
 
 /* Slider */
 body {
